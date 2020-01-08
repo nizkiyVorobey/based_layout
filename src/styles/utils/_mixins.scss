@@ -1,0 +1,13 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin square($width, $height) {
+  width: $width;
+  height: $height;
+  left: calc(50% - #{$width/2});
+  top: calc(50% - #{$height/2});
+}

@@ -1,0 +1,165 @@
+.header {
+  background-color: #2c3e50;
+  position: relative;
+  overflow: hidden;
+
+  &__img-item {
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 65px;
+    text-transform: uppercase;
+    margin: auto;
+  }
+
+  &__square {
+    width: 40px;
+    height: 40px;
+    border: 2px solid $orange;
+    margin-left: 15px;
+
+    &::before {
+      @include square(28px, 28px);
+      background-color: $orange;
+    }
+
+    &::after {
+      @include square(15px, 60px);
+      background: #2c3e50;
+    }
+  }
+
+  &__sign-up {
+    width: 108px;
+    height: 39px;
+    border-radius: 3px;
+    background-color: $orange;
+    color: white;
+    text-align: center;
+    line-height: 39px;
+    margin-right: 15px;
+  }
+}
+
+.nav-menu {
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+  }
+
+  &__li:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  &__link {
+    color: #567799;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media screen and(max-width: 950px) {
+  .header {
+    &__nav {
+      flex-direction: column;
+      position: relative;
+    }
+
+    &__square {
+      margin-left: 0;
+      margin-top: 20px;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    &__nav-menu {
+      margin: 20px 0;
+      width: 100%;
+      border-bottom: 2px solid white;
+      padding-bottom: 20px;
+    }
+
+    &__sign-up {
+      margin: 15px 0 80px;
+    }
+  }
+
+  .nav-menu {
+    &__ul {
+      justify-content: space-around;
+      margin: 0 20px;
+    }
+
+    &__li:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and(max-width: 650px) {
+  .nav-menu__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu__li {
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+
+// If less 400px disable burger menu
+@media screen and(max-width: 400px) {
+  .header {
+    height: 365px;
+  }
+  .burger-icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+  }
+  .header__nav {
+    transform: translate(100%, 0);
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+  }
+  .nav-burger {
+    transform: translate(0, 0);
+  }
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: transform 0.5s linear;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}

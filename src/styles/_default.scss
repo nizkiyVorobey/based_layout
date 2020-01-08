@@ -1,0 +1,151 @@
+body {
+  font-weight: 400;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-family: "Open Sans", "Helvetica", "Arial", "Georgia", sans-serif;
+}
+
+.display-none {
+  display: none;
+}
+
+.limiter-header {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.limiter-body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.main-title {
+  font-size: 50px;
+  color: #e74c3c;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.secondary-title {
+  font-size: 30px;
+  color: #2c3e50;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.common-text {
+  color: #707070;
+  font: italic 20px "Georgia", sans-serif;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 15px;
+  color: #707070;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.color-white {
+  color: white;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.square {
+  position: relative;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+}
+
+.body-square-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 35px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1px 300px 1px 0;
+    border-color: transparent $orange transparent transparent;
+  }
+
+  &::after {
+    margin-right: 20px;
+    transform: rotate(180deg);
+  }
+  &::before {
+    margin-left: 20px;
+  }
+}
+
+.square-orange {
+  width: 20px;
+  height: 20px;
+  border: 1px solid $orange;
+  margin: auto;
+
+  &::before {
+    @include square(14px, 14px);
+    background-color: $orange;
+  }
+
+  &::after {
+    @include square(7.5px, 30px);
+    background: white;
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .body-square-wrapper {
+    max-width: 500px;
+    &::before,
+    &::after {
+      border-width: 1px 200px 1px 0;
+    }
+  }
+
+}
+
+@media screen and(max-width: 500px) {
+  .body-square-wrapper {
+    max-width: 300px;
+    &::before,
+    &::after {
+      border-width: 1px 100px 1px 0;
+    }
+  }
+}
+
+@media screen and(max-width: 299px) {
+  .body-square-wrapper {
+    display: none;
+  }
+}
