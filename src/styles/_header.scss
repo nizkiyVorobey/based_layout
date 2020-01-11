@@ -119,13 +119,14 @@
 @media screen and(max-width: 400px) {
   .header {
     height: 365px;
+    background-color: transparent; // ADD
   }
   .burger-icon {
     display: block;
     position: absolute;
     top: 8px;
     right: 8px;
-    z-index: 2;
+    z-index: 3;
   }
   .header__nav {
     transform: translate(100%, 0);
@@ -135,6 +136,7 @@
     left: 0;
     width: 100%;
     background-color: #2c3e50;
+    z-index: 2; //ADD
   }
   .nav-burger {
     transform: translate(0, 0);

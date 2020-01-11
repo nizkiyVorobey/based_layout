@@ -25,6 +25,12 @@
   }
 }
 
+@media (max-width: 400px) { // ADD
+  .about-us {
+    margin-top: -200px;
+  }
+}
+
 .what-we-do {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +153,6 @@
 
     &__text {
       margin: auto;
-      margin-left: 12px;
       margin-top: 5px;
       font-size: 50px;
       line-height: 200px;
@@ -159,7 +164,7 @@
     &__img {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -6px;
     }
 
     &__circle {
@@ -271,7 +276,7 @@
 
 .subscribe {
   margin-top: 70px;
-  padding: 1px 15px 0;
+  padding: 1px 15px 40px;
   background: #2c3e50;
 
   &__secondary-title {
@@ -297,6 +302,7 @@
     border: none;
     margin-right: 25px;
     margin-bottom: 20px;
+    font: 20px "Open Sans", sans-serif;
   }
 
   @media screen and(max-width: 600px) {
