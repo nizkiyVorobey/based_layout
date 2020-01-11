@@ -6,6 +6,7 @@
     <title>Based-layout</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cb7434356.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -25,11 +26,11 @@
         <nav class="header__nav-menu nav-menu">
           <ul class="nav-menu__ul">
             <li class="nav-menu__li"><a href="#" class="nav-menu__link">Home</a></li>
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">About</a></li>
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">Skills</a></li>
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">Portfolio</a></li>
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">Our team</a></li>
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">Contact</a></li>
+            <li class="nav-menu__li"><a href="#about" class="nav-menu__link">About</a></li>
+            <li class="nav-menu__li"><a href="#skills" class="nav-menu__link">Skills</a></li>
+            <li class="nav-menu__li"><a href="#portfolio" class="nav-menu__link">Portfolio</a></li>
+            <li class="nav-menu__li"><a href="#team" class="nav-menu__link">Our team</a></li>
+            <li class="nav-menu__li"><a href="#footer" class="nav-menu__link">Contact</a></li>
           </ul>
         </nav>
         <a href="#" class="header__sign-up btn">Sign up</a>
@@ -37,7 +38,7 @@
 
     </header>
 
-    <section class="about-us limiter-body" >
+    <section id="about" class="about-us limiter-body" >
       <h2 class="main-title about-us__title">About Us</h2>
       <div class="body-square-wrapper">
         <div class="square-orange square"></div>
@@ -86,7 +87,7 @@
 
     </section>
 
-    <div class="our-skills-wrapper">
+    <div id="skills" class="our-skills-wrapper">
       <div class="our-skills ">
         <h2 class="secondary-title our-skills__title">Our skills</h2>
 
@@ -104,8 +105,9 @@
               <svg width="210" height="210" class="stroke__img">
                 <circle class="stroke__circle stroke__circle--97-percent" cx="105" cy="105" r="95" />
               </svg>
+              <p class="skills-block__skills-name">Photoshop</p>
+
             </figure>
-            <p class="skills-block__skills-name">Photoshop</p>
           </div>
 
           <div class="skills-block-item">
@@ -150,7 +152,7 @@
       </div>
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
       <h2 class="main-title about-us__title">Portfolio</h2>
       <div class="body-square-wrapper">
         <div class="square-orange square"></div>
@@ -199,7 +201,7 @@
 
     </div>
 
-    <div class="our-team limiter-body">
+    <div id="team" class="our-team limiter-body">
       <h2 class="main-title our-team__title">Our Team</h2>
 
       <div class="body-square-wrapper">
@@ -249,8 +251,27 @@
     </div>
 
 
-    <footer class="footer">
-      <p class="footer__text">© 2014, Based by Agileinfoways.</p>
+    <footer id="footer" class="footer ">
+      <div class="footer-body">
+        <p class="footer__text">© 2014, Based by Agileinfoways.</p>
+        <div class="footer__link-wrap">
+          <a href="" class="footer__link-item">
+            <i class="fabgit  fa-twitter"></i>
+          </a>
+
+          <a href="" class="footer__link-item">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="" class="footer__link-item">
+            <i class="fab fa-pinterest"></i>
+          </a>
+
+          <a href="" class="footer__link-item">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>
