@@ -108,6 +108,8 @@
 
   &__title {
     color: $white;
+    font-size: 50px;
+    font-weight: 400;
   }
 
   .square-white {
@@ -133,7 +135,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 50px 15px 30px;
+  padding: 30px 15px 30px;
   margin: auto;
   max-width: 1000px;
 
@@ -214,10 +216,11 @@
   max-width: 2000px;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 
   &__item {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     flex-grow: 1;
     position: relative;
     flex-direction: column;
@@ -250,7 +253,7 @@
     &::before {
       content: "+";
       font-weight: 100;
-      line-height: 200px;
+      line-height: 3g00px;
       font-size: 100px;
       font-family: none;
       left: calc(50% - 20px);
