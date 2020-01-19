@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Based-layout</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap"
+      rel="stylesheet">
     <script src="https://kit.fontawesome.com/7cb7434356.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -25,12 +27,24 @@
         <div class="header__square square"></div>
         <nav class="header__nav-menu nav-menu">
           <ul class="nav-menu__ul">
-            <li class="nav-menu__li"><a href="#" class="nav-menu__link">Home</a></li>
-            <li class="nav-menu__li"><a href="#about" class="nav-menu__link">About</a></li>
-            <li class="nav-menu__li"><a href="#skills" class="nav-menu__link">Skills</a></li>
-            <li class="nav-menu__li"><a href="#portfolio" class="nav-menu__link">Portfolio</a></li>
-            <li class="nav-menu__li"><a href="#team" class="nav-menu__link">Our team</a></li>
-            <li class="nav-menu__li"><a href="#footer" class="nav-menu__link">Contact</a></li>
+            <li class="nav-menu__li">
+              <a href="#" class="nav-menu__link">Home</a>
+            </li>
+            <li class="nav-menu__li">
+              <a href="#about" class="nav-menu__link">About</a>
+            </li>
+            <li class="nav-menu__li">
+              <a href="#skills" class="nav-menu__link">Skills</a>
+            </li>
+            <li class="nav-menu__li">
+              <a href="#portfolio" class="nav-menu__link">Portfolio</a>
+            </li>
+            <li class="nav-menu__li">
+              <a href="#team" class="nav-menu__link">Our team</a>
+            </li>
+            <li class="nav-menu__li">
+              <a href="#footer" class="nav-menu__link">Contact</a>
+            </li>
           </ul>
         </nav>
         <a href="#" class="header__sign-up btn">Sign up</a>
@@ -91,8 +105,11 @@
       <div class="our-skills ">
         <h2 class="secondary-title our-skills__title">Our skills</h2>
 
-        <div class="body-square-wrapper body-square-wrapper--white">
-          <div class="square-orange square square-white"></div>
+        <div class="body-square-wrapper body-square-wrapper-white ">
+          <div class="transparent-square">
+            <div class="transparent-square__left-line"></div>
+            <div class="transparent-square__right-line"></div>
+          </div>
         </div>
 
         <div class="skills-block">
@@ -101,20 +118,17 @@
             <figure class="stroke" data-percent="75">
               <figcaption></figcaption>
               <p class="stroke__text">97%</p>
-
               <svg width="210" height="210" class="stroke__img">
                 <circle class="stroke__circle stroke__circle--97-percent" cx="105" cy="105" r="95" />
               </svg>
-              <p class="skills-block__skills-name">Photoshop</p>
-
             </figure>
+            <p class="skills-block__skills-name">Photoshop</p>
           </div>
 
           <div class="skills-block-item">
             <figure class="stroke" data-percent="75">
               <figcaption></figcaption>
               <p class="stroke__text">99%</p>
-
               <svg width="210" height="210" class="stroke__img">
                 <circle class="stroke__circle stroke__circle--99-percent" cx="105" cy="105" r="95" />
               </svg>
@@ -124,10 +138,8 @@
 
           <div class="skills-block-item">
             <figure class="stroke" data-percent="75">
-
               <figcaption></figcaption>
               <p class="stroke__text">93%</p>
-
               <svg width="210" height="210" class="stroke__img">
                 <circle class="stroke__circle stroke__circle--93-percent" cx="105" cy="105" r="95" />
               </svg>
@@ -137,10 +149,8 @@
 
           <div class="skills-block-item">
             <figure class="stroke" data-percent="75">
-
               <figcaption></figcaption>
               <p class="stroke__text">89%</p>
-
               <svg width="210" height="210" class="stroke__img">
                 <circle class="stroke__circle stroke__circle--89-percent" cx="105" cy="105" r="95" />
               </svg>
@@ -184,7 +194,6 @@
       <div class="grid-block__item grid-block__item--10"></div>
       <div class="grid-block__item grid-block__item--11"></div>
       <div class="grid-block__item grid-block__item--12"></div>
-
       <div class="grid-block__item grid-block__item--1"></div>
       <div class="grid-block__item grid-block__item--2"></div>
       <div class="grid-block__item grid-block__item--3"></div>
@@ -195,7 +204,7 @@
       <p class="small-text color-white">You'll get an email about once a month. We'll never share your address.</p>
 
       <div class="subscribe__input-wrap">
-        <input type="text" class="subscribe__input" placeholder="Enter you Email">
+        <input type="text" class="subscribe__input" placeholder="Enter you Email" name="subscribe">
         <a href="#" class="subscribe__link btn">subscribe</a>
       </div>
 

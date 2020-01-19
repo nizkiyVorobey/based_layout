@@ -1,0 +1,39 @@
+.body-square-wrapper-white::before, .body-square-wrapper-white::after {
+  border-color: transparent white transparent transparent !important; }
+
+.transparent-square {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+  .transparent-square__left-line::before, .transparent-square__left-line::after, .transparent-square__right-line::before, .transparent-square__right-line::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    margin: -2px; }
+  .transparent-square__left-line::before {
+    bottom: -2.5px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    left: -1px; }
+  .transparent-square__left-line::after {
+    bottom: -2px;
+    left: -1px; }
+  .transparent-square__right-line::before {
+    right: -2.1px;
+    top: -2px; }
+  .transparent-square__right-line::after {
+    right: -1.5px;
+    top: -1.5px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: right center;
+            transform-origin: right center; }
+
+/*# sourceMappingURL=white-square.css.map */
