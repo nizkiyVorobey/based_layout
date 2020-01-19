@@ -1,0 +1,50 @@
+
+.body-square-wrapper-white {
+  &::before,
+  &::after {
+    border-color: transparent white transparent transparent !important;
+  }
+}
+
+.transparent-square {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  transform: rotate(45deg);
+
+  &__left-line::before,
+  &__left-line::after,
+  &__right-line::before,
+  &__right-line::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    margin: -2px;
+  }
+
+  &__left-line::before {
+    bottom: -2.5px;
+    transform: rotate(-90deg);
+    transform-origin: left center;
+    left: -1px;
+  }
+  &__left-line::after {
+    bottom: -2px;
+    left: -1px;
+  }
+
+  &__right-line::before {
+    right: -2.1px;
+    top: -2px;
+  }
+
+  &__right-line::after {
+    right: -1.5px;
+    top: -1.5px;
+    transform: rotate(-90deg);
+    transform-origin: right center;
+  }
+}
