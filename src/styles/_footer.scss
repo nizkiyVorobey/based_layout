@@ -3,11 +3,43 @@
   height: 81px;
   margin-top: 70px;
 
+  &-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+  }
+
   &__text {
     font-size: 15px;
     color: white;
     font-weight: 300;
-    text-align: center;
-    line-height: 81px;
+    padding: 0 15px;
+  }
+
+  &__link-wrap {
+    display: flex;
+    padding: 0 15px;
+
+  }
+
+  &__link-item {
+    color: #677d93;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__link-item:not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding: 10px 0 20px;
   }
 }

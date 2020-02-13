@@ -25,6 +25,12 @@
   }
 }
 
+@media (max-width: 400px) { // ADD
+  .about-us {
+    margin-top: -200px;
+  }
+}
+
 .what-we-do {
   display: flex;
   flex-wrap: wrap;
@@ -32,15 +38,7 @@
 
   &-item {
     max-width: 250px;
-  }
-
-  &-item:not(:first-child) {
-    margin-left: 30px;
-  }
-  @media screen and(max-width: 500px) {
-    &-item:not(:first-child) {
-      margin-left: 0;
-    }
+    margin: 15px;
   }
 
   &__square {
@@ -102,6 +100,9 @@
 
   &__title {
     color: $white;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
   }
 
   .square-white {
@@ -127,7 +128,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 50px 15px 30px;
+  padding: 30px 15px;
   margin: auto;
   max-width: 1000px;
 
@@ -147,7 +148,6 @@
 
     &__text {
       margin: auto;
-      margin-left: 12px;
       margin-top: 5px;
       font-size: 50px;
       line-height: 200px;
@@ -159,7 +159,7 @@
     &__img {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -6px;
     }
 
     &__circle {
@@ -209,10 +209,11 @@
   max-width: 2000px;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 
   &__item {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     flex-grow: 1;
     position: relative;
     flex-direction: column;
@@ -245,7 +246,7 @@
     &::before {
       content: "+";
       font-weight: 100;
-      line-height: 200px;
+      line-height: 300px;
       font-size: 100px;
       font-family: none;
       left: calc(50% - 20px);
@@ -271,7 +272,7 @@
 
 .subscribe {
   margin-top: 70px;
-  padding: 1px 15px 0;
+  padding: 1px 15px 40px;
   background: #2c3e50;
 
   &__secondary-title {
@@ -297,6 +298,7 @@
     border: none;
     margin-right: 25px;
     margin-bottom: 20px;
+    font: 20px "Open Sans", sans-serif;
   }
 
   @media screen and(max-width: 600px) {
